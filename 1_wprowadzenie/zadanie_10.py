@@ -1,10 +1,10 @@
 #Napisz skrypt, w którym tworzysz listę ulubionych filmów
 #i posortuj ją.
 
-lista = [
+list = [
         "Godfather", "Taxi driver", "Gladiator",
         "Scarface", "Hannibal", "Prison break"
         ]
 
-lista.sort()
-print(lista)
+list.sort()
+print(list)
