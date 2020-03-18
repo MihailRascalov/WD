@@ -1,7 +1,6 @@
-#Napisz skrypt, gdzie w zmiennej string zapiszesz fragment tekstu
-#piosenki z powtarzającymi się słowami np. "la la la". Następnie
-#użyj odpowiedniej funkcji, która zliczy występowanie słowa "la".
-#(trzeba użyć metody count)
+#Napisz skrypt, gdzie w zmiennej string zapiszesz fragment tekstu piosenki z powtarzającymi
+#się słowami np. "la la la". Następnie użyj odpowiedniej funkcji, która zliczy występowanie
+#słowa "la". (trzeba użyć metody count)
 
 fragment_of_the_song_lyrics = """
 I'm covering my ears like a kid
@@ -18,6 +17,3 @@ La la, na na, la la la la la, na na na na na.
 word_to_count = "na na na"
 count = fragment_of_the_song_lyrics.count(word_to_count)
 print("Word \"" + word_to_count + "\" occurred " + str(count) + " times.")
-
-
-

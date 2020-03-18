@@ -1,5 +1,4 @@
-#Napisz skrypt, w którym tworzysz listę ulubionych filmów
-#i posortuj ją.
+#Napisz skrypt, w którym tworzysz listę ulubionych filmów i posortuj ją.
 
 list = [
         "Godfather", "Taxi driver", "Gladiator",

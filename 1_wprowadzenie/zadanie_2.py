@@ -1,17 +1,17 @@
-#Stwórz skrypt kalkulator, w którym wykorzystasz wszystkie
-#podstawowe działania arytmetyczne
+#Stwórz skrypt kalkulator, w którym wykorzystasz wszystkie podstawowe działania 
+#arytmetyczne.
 
 def Multiply(x, y):
-    return x*y
+    return x * y
 
 def Divide(x, y):
-    return x/y
+    return x / y
 
 def Add(x, y):
-    return x+y
+    return x + y
 
 def Subtract(x, y):
-    return x-y
+    return x - y
 
 number_one, number_two = 50, 2
 print("Multiplication result " + str(number_one) + " * " 

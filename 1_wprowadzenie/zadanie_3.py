@@ -1,30 +1,30 @@
-#Napisz skrypt, w którym stworzysz operatory przyrostkowe dla
-#operacji: +,-,*,/,**,%
+#Napisz skrypt, w którym stworzysz operatory przyrostkowe dla operacji: +,-,*,/,**,%.
 
-number_one = 10
-number_two = 5
-print("Initial number = " + str(number_one))
+initial_number = 10
+operation_number = 5
+print("Initial number = " + str(initial_number))
+print("Operation number = " + str(operation_number))
 
-print(str(number_one) + " += " + str(number_two))
-number_one += number_two
-print("=> " + str(number_one))
+print(str(initial_number) + " += " + str(operation_number))
+initial_number += operation_number
+print("=> " + str(initial_number))
 
-print(str(number_one) + " -= " + str(number_two))
-number_one -= number_two
-print("=> " + str(number_one))
+print(str(initial_number) + " -= " + str(operation_number))
+initial_number -= operation_number
+print("=> " + str(initial_number))
 
-print(str(number_one) + " *= " + str(number_two))
-number_one *= number_two
-print("=> " + str(number_one))
+print(str(initial_number) + " *= " + str(operation_number))
+initial_number *= operation_number
+print("=> " + str(initial_number))
 
-print(str(number_one) + " /= " + str(number_two))
-number_one /= number_two
-print("=> " + str(number_one))
+print(str(initial_number) + " /= " + str(operation_number))
+initial_number /= operation_number
+print("=> " + str(initial_number))
 
-print(str(number_one) + " **= " + str(round(number_two, 2)))
-number_one **= number_two
-print("=> " + str(number_one))
+print(str(initial_number) + " **= " + str(round(operation_number, 2)))
+initial_number **= operation_number
+print("=> " + str(initial_number))
 
-print(str(number_one) + " %= " + str(round(number_two, 2)))
-number_one %= number_two
-print("=> " + str(number_one))
+print(str(initial_number) + " %= " + str(round(operation_number, 2)))
+initial_number %= operation_number
+print("=> " + str(initial_number))

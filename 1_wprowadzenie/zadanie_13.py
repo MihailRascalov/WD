@@ -1,6 +1,6 @@
-#Stwórz słownik, gdzie zapiszesz imiona i nazwiska swoich znajomych
-#jako klucz proszę użyć ich przezwisk (10 elementów). Następnie wyświetl
-#kilka danych odwołując się do elemntów przez klucz.
+#Stwórz słownik, gdzie zapiszesz imiona i nazwiska swoich znajomych jako klucz proszę użyć
+#ich przezwisk (10 elementów). Następnie wyświetl kilka danych odwołując się do elemntów
+#przez klucz.
 
 friends = {
     "Rocky" : ["Sylwester", "Bostanov"],
@@ -13,7 +13,7 @@ friends = {
     "Moon_boy" : ["Bartosz", "Engor"],
     "Sata" : ["Kamila", "Niepodsiad"],
     "Pirate_window" : ["Magdalena", "Czarnobylska"]
-}
+    }
 
 print(friends["Rocky"][1])
 print(friends["Kraxa"][0])

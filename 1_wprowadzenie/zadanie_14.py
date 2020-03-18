@@ -1,6 +1,5 @@
-#Stwórz słownik skrótów powszechnie używanych w smsach. Jako
-#klucz niech będzie skrót, a jako wartość zdanie. Skopiuj
-#słownik do innego słownika.
+#Stwórz słownik skrótów powszechnie używanych w smsach. Jako klucz niech będzie skrót, a 
+#jako wartość zdanie. Skopiuj słownik do innego słownika.
 
 sms_shortcuts = {
     "2D" : "To delete",
@@ -10,7 +9,7 @@ sms_shortcuts = {
     "F2F" : "Face to face",
     "NC" : "No comment",
     "PM" : "Private message"
-}
+    }
 
 general_shortcuts = sms_shortcuts.copy()
 print(general_shortcuts)
