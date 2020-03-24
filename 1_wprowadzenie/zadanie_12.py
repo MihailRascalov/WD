@@ -3,5 +3,6 @@
 #w liście.
 
 sentence = "The halvening price peek was earlier that i expected"
+
 list = sentence.split()
 print(list)

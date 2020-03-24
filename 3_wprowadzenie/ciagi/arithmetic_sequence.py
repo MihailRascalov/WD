@@ -1,5 +1,4 @@
-def sum_of_the_arithmetic_sequence(a1 = 1, r = 1,
-    how_many_elements = 10):
+def sum_of_the_arithmetic_sequence(a1 = 1, r = 1, how_many_elements = 10):
     if how_many_elements == 1:
         return a1
     elif how_many_elements == 0:
@@ -7,9 +6,11 @@ def sum_of_the_arithmetic_sequence(a1 = 1, r = 1,
     
     sum = a1
     sum_sequence = a1
+
     for i in range(1, how_many_elements):
         sum += r
         sum_sequence += sum
+    
     return sum_sequence
 
 def formula_for_the_nth_word():

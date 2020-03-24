@@ -1,17 +1,19 @@
-#Napisz pętle, która pobiera liczby od
-#użytkownika i wyświetla ich
-#kwadraty na ekranie.
+#Napisz pętle, która pobiera liczby od użytkownika i wyświetla ich kwadraty na ekranie.
+
 import math
 
 input_number = "start"
+
 while input_number != 'q':
-    print("Insert number or press \'q\' to quit")
-    input_number = input()
+    input_number = input("Insert number or press \'q\' to quit: ")
     try:
         input_number = float(input_number)
-        if (input_number >= 0.0 or input_number <= 0.0):
-            print("Square = " + str(round(math.sqrt(input_number), 2)))
+        input_number = round(input_number*input_number, 2)
+        print("Square = " + str(input_number))
     except ValueError:
-        print("Wrong data input")
+        if(input_number=='q'):
+            print("Done")
+        else:
+            print("Wrong data input")
     except:
-        print("Some general exception")
+        print("Another exception")

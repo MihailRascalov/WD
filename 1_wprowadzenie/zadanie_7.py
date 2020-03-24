@@ -3,5 +3,6 @@
 #zmienną łańcuchową i wyświetl jej drugą i ostatnią literę, wykorzystując indeksy.
 
 last_name = "Livermore"
+
 print("Second and last word in \"" + last_name + "\" string = " + last_name[1] + ", " 
      + last_name[-1] + ".")

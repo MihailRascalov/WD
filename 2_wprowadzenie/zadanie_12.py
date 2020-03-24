@@ -1,5 +1,4 @@
-#Napisz skrypt, który wyświetla i oblicza tabliczkę mnożenia
-#od 1 do 100.
+#Napisz skrypt, który wyświetla i oblicza tabliczkę mnożenia od 1 do 100.
 
 import sys
 

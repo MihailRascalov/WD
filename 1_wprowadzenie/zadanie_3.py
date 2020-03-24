@@ -2,6 +2,7 @@
 
 initial_number = 10
 operation_number = 5
+
 print("Initial number = " + str(initial_number))
 print("Operation number = " + str(operation_number))
 

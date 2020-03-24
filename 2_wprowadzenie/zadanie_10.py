@@ -1,5 +1,12 @@
-#Napisz skrypt, który rysuje wieżę z literek. Użytkownik
-#podaje wysokość wieży, ale nie więcej jak 10.
+#Napisz skrypt, który rysuje wieżę z literek. Użytkownik podaje wysokość wieży, ale nie 
+#więcej jak 10.
+
+#A
+#AA
+#AAA
+#AAAA
+#AAAAA
+#AAAAAA
 
 import sys
 

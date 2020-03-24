@@ -16,4 +16,5 @@ La la, na na, la la la la la, na na na na na.
 
 word_to_count = "na na na"
 count = fragment_of_the_song_lyrics.count(word_to_count)
+
 print("Word \"" + word_to_count + "\" occurred " + str(count) + " times.")

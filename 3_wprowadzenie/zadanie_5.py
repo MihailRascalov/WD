@@ -1,7 +1,5 @@
-#Napisz funkcję, która będzie sprawdzać czy dwie proste są
-#równoległe czy prostopadłe: Prosta dana równaniami
-#y=a1x+b1
-#y=a2x+b2, są
+#Napisz funkcję, która będzie sprawdzać czy dwie proste są równoległe czy prostopadłe:
+#Proste dane równaniami y=a1x+b1, y=a2x+b2, są
 #równoległe gdy a1=a2
 #prostopadłe gdy a1a2=-1
 

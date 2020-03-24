@@ -12,4 +12,5 @@ list = [
         cos0, round(cos30, 2), round(cos45, 2), round(cos60, 2), cos90,
         tg0, round(tg30, 2), tg45, round(tg60, 2), tg90
         ]
+        
 print(list)

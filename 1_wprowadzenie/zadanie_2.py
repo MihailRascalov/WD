@@ -14,6 +14,7 @@ def Subtract(x, y):
     return x - y
 
 number_one, number_two = 50, 2
+
 print("Multiplication result " + str(number_one) + " * " 
      + str(number_two) + " = " + str(Multiply(number_one, number_two)))
 print("Division result " + str(number_one) + " / " 

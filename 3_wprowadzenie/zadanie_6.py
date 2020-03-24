@@ -1,6 +1,5 @@
-#Zdefiniuj funkcję, która na podstawie równania okręgu w
-#postaci kanonicznej zwróci długość promienia. Funkcja ma
-#przyjmować argumenty domyślne:
+#Zdefiniuj funkcję, która na podstawie równania okręgu w postaci kanonicznej zwróci długość 
+#promienia. Funkcja ma przyjmować argumenty domyślne:
 #Równanie okręgu dane jest wzorem:
 #(x-a)^2+(y-b)^2=r^2
 #gdzie (a,b) to środek okręgu, a r to promień okręgu.
