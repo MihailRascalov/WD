@@ -1,18 +1,13 @@
-#Zdefiniuj następujące zbiory, wykorzystując Python comprehension
-#A={1/x: x(<1,10>}
-#B={1,2,4,8,..,2^10}
-#C={x:x(B i x jest liczbą podzielną przez 4}
+# Zdefiniuj następujące zbiory, wykorzystując Python comprehension:
+# A={1/x: xe<1,10>}
+# B={1,2,4,8,..,2^10}
+# C={x:xeB i x jest liczbą podzielną przez 4}
 
-import sys
+A = [round(1/x, 2) for x in range(1, 11)]
+print("A = " + str(A))
 
-sys.stdout.write("A = ")
-A=[round(1/x, 2) for x in range(1, 11)]
-print(A)
+B = [2**x for x in range(11)]
+print("B = " + str(B))
 
-sys.stdout.write("B = ")
-B=[2**x for x in range(11)]
-print(B)
-
-sys.stdout.write("C = ")
-C=[x for x in B if x%4==0]
-print(C)
+C = [x for x in B if x%4==0]
+print("C = " + str(C))
