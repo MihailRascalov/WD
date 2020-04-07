@@ -1,5 +1,5 @@
-#Wykorzystując komendę with zapisz kilka linijek tekstu do pliku, a następnie wyświetl je
-#na ekranie.
+# Wykorzystując komendę with zapisz kilka linijek tekstu do pliku, a następnie wyświetl je
+# na ekranie.
 
 with open("writing_some_lines.txt", "w+") as write_file:
     write_file.writelines("Testing for ")

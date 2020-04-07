@@ -1,4 +1,4 @@
-#Odczytaj plik z poprzedniego zadania i wyświetl jego zawartość w konsoli.
+# Odczytaj plik z poprzedniego zadania i wyświetl jego zawartość w konsoli.
 
 import sys
 

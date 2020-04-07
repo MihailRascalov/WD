@@ -1,4 +1,4 @@
-#Wygeneruj liczby podzielne przez 4 i zapisz je do pliku.
+# Wygeneruj liczby podzielne przez 4 i zapisz je do pliku.
 
 import sys
 
