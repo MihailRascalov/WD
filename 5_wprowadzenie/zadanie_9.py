@@ -12,12 +12,8 @@ def vowel_generator(data):
 
 try:
     generator_test_string = vowel_generator("Brzęczyszczykiewicz")
-    print(next(generator_test_string))
-    print(next(generator_test_string))
-    print(next(generator_test_string))
-    print(next(generator_test_string))
-    print(next(generator_test_string))
-    print(next(generator_test_string))
+    for x in range(0, 6):
+        print(next(generator_test_string))
     print()
 
     generator_test_int = vowel_generator(512321)

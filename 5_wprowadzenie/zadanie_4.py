@@ -17,12 +17,8 @@ p0 = Point()
 p1 = Point(1,1)
 p2 = Point(2,2)
 
-p0.update(0)
-p0.update(1)
-p1.update(2)
-p1.update(3)
-p2.update(4)
-p2.update(5)
+for x in range(0, 6):
+    p0.update(x)
 
 # The values are the same for all objects.
 print(p0.counter)
