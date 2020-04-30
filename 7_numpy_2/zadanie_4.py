@@ -8,3 +8,5 @@ print(matrix_one*2)
 
 matrix_two = np.arange(1.2, 1.7, 0.2, dtype="float")
 print(matrix_two*3)
+
+print(np.dot(matrix_one, matrix_two))

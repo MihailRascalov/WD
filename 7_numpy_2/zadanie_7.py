@@ -1,4 +1,6 @@
 # Wykonaj funkcję dodawania obu macierzy zapisanych wcześniej do zmiennych a i b.
 
-# need to import a and b
-# zadanie 3 do poprawy
+import zadanie_5
+import zadanie_6
+
+print(zadanie_5.a + zadanie_6.b)

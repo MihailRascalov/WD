@@ -7,6 +7,3 @@ matrix_one *= 2
 
 matrix_two = np.arange(3, 6)
 matrix_two *= 3
-
-print(matrix_one)
-print(matrix_two)

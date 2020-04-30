@@ -4,7 +4,5 @@
 import numpy as np
 
 matrix = np.arange(2, 8).reshape(2, 3)
-print(matrix)
 
 b = np.cos(matrix)
-print(b)

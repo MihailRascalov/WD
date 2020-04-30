@@ -4,7 +4,5 @@
 import numpy as np
 
 matrix = np.arange(0, 6).reshape(2, 3)
-print(matrix)
 
 a = np.sin(matrix)
-print(a)
