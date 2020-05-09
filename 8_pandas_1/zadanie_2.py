@@ -11,27 +11,31 @@
 from zadanie_1 import df
 
 # Zadanie 2.1
-# print(df[df["Liczba"]>1000])
+names = df[df["Liczba"]>1000]
+names.reset_index(drop=True, inplace=True)
+print(names)
 
 # Zadanie 2.2
-# print(df[df["Imie"]=="MICHAŁ"])
+my_name = df[df["Imie"]=="MICHAŁ"]
+my_name.reset_index(drop=True, inplace=True)
+print(my_name)
 
 # Zadanie 2.3
-# print(df["Liczba"].sum())
+print(df["Liczba"].sum())
 
 # Zadanie 2.4
-# df_sum = df.groupby("Rok")["Liczba"].sum()
-# print(df_sum.head(6).sum())
+df_sum = df.groupby("Rok")["Liczba"].sum()
+print(df_sum.head(6).sum())
 
 # Zadanie 2.5
-# print(df.groupby("Plec")["Liczba"].sum())
+print(df.groupby("Plec")["Liczba"].sum())
 
 # Zadanie 2.6
-# x = df.loc[df.reset_index().groupby(["Rok", "Plec"])["Liczba"].idxmax()]
-# x.reset_index(drop=True, inplace=True)
-# print(x.drop(["Liczba", "Plec"], axis=1))
+x = df.loc[df.groupby(["Rok", "Plec"])["Liczba"].idxmax()]
+x.reset_index(drop=True, inplace=True)
+print(x.drop(["Liczba", "Plec"], axis=1))
 
 # Zadanie 2.7
-# x = df.loc[df.reset_index().groupby(["Plec"])["Liczba"].idxmax()]
-# x.reset_index(drop=True, inplace=True)
-# print(x.drop(["Liczba", "Plec"], axis=1))
+x = df.loc[df.groupby(["Plec"])["Liczba"].idxmax()]
+x.reset_index(drop=True, inplace=True)
+print(x.drop(["Liczba", "Plec"], axis=1))

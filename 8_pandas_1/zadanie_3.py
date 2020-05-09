@@ -12,54 +12,55 @@ import pandas as pd
 import numpy as np
 from datetime import date
 
-# Zadanie 3.1
 df = pd.read_csv('zamowienia.csv', header=0, sep=";")
-# column = df["Sprzedawca"]
-# print(column.unique())
+
+# Zadanie 3.1
+column = df["Sprzedawca"]
+print(column.unique())
 
 # Zadanie 3.2
-# print(df.sort_values(by=["Utarg"], ascending=False).head(5))
+max_orders = df.sort_values(by=["Utarg"], ascending=False).head(5)
+max_orders.reset_index(drop=True, inplace=True)
+print(max_orders)
 
 # Zadanie 3.3
-# x = df.groupby("Sprzedawca").count()
-# x = x.rename(columns={"Kraj": "Ilosc zamowien"})
-# print(x.drop(["Data zamowienia", "idZamowienia", "Utarg"], axis=1))
+order_numer = df.groupby("Sprzedawca")["Utarg"].count().reset_index(name="Ilosc zamowien")
+print(order_numer)
 
 # Zadanie 3.4
-# y = df.groupby("Kraj")["Utarg"].sum()
-# print(y)
+sum_per_country = df.groupby("Kraj")["Utarg"].sum().reset_index(name="Suma zamowien")
+print(sum_per_country)
 
 # Zadanie 3.5
-# df['Data zamowienia'] = pd.to_datetime(df['Data zamowienia'])
-# z = df[df['Kraj']=="Polska"]
-# date_from = pd.Timestamp(date(2005,1,1))
-# date_to = pd.Timestamp(date(2005,12,31))
+df['Data zamowienia'] = pd.to_datetime(df['Data zamowienia'])
+sum_for_2005_PL = df[df['Kraj']=="Polska"]
+date_from = pd.Timestamp(date(2005,1,1))
+date_to = pd.Timestamp(date(2005,12,31))
 
-# z = z[
-    # (z['Data zamowienia'] > date_from ) &
-    # (z['Data zamowienia'] < date_to)
-# ]
-# z.reset_index(drop=True, inplace=True)
-# print(z)
-# to_save_2005 = z
-# z = z.groupby("Kraj")["Utarg"].sum()
-# print(z)
+sum_for_2005_PL = sum_for_2005_PL[
+    (sum_for_2005_PL['Data zamowienia'] > date_from ) &
+    (sum_for_2005_PL['Data zamowienia'] < date_to)
+]
+sum_for_2005_PL.reset_index(drop=True, inplace=True)
+print(sum_for_2005_PL)
+to_save_2005 = sum_for_2005_PL
+sum_for_2005_PL = sum_for_2005_PL.groupby("Kraj")["Utarg"].sum().reset_index(name="Suma zamowien")
+print(sum_for_2005_PL)
 
 # Zadanie 3.6
-# df['Data zamowienia'] = pd.to_datetime(df['Data zamowienia'])
-# date_from = pd.Timestamp(date(2004,1,1))
-# date_to = pd.Timestamp(date(2004,12,31))
+date_from = pd.Timestamp(date(2004,1,1))
+date_to = pd.Timestamp(date(2004,12,31))
 
-# x = df[
-    # (df['Data zamowienia'] > date_from ) &
-    # (df['Data zamowienia'] < date_to)
-# ]
-# x.reset_index(drop=True, inplace=True)
-# print(x)
-# to_save_2004 = x
-# x = x["Utarg"].mean()
-# print(x)
+average_order_value = df[
+    (df['Data zamowienia'] > date_from ) &
+    (df['Data zamowienia'] < date_to)
+]
+average_order_value.reset_index(drop=True, inplace=True)
+print(average_order_value)
+to_save_2004 = average_order_value
+average_order_value = average_order_value["Utarg"].mean()
+print(average_order_value)
 
 # Zadanie 3.7
-# to_save_2004.to_csv('zamówienia_2004.csv', header=0, index=False)
-# to_save_2005.to_csv('zamówienia_2005.csv', header=0, index=False)
+to_save_2004.to_csv('zamówienia_2004.csv', index=False)
+to_save_2005.to_csv('zamówienia_2005.csv', index=False)
