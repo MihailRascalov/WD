@@ -11,7 +11,6 @@ xlsx = pd.ExcelFile('imiona.xlsx')
 df = pd.read_excel(xlsx)
 
 births_all_time_gender = df.groupby("Plec")["Liczba"].sum()
-print(births_all_time_gender)
 chart = births_all_time_gender.plot.bar()
 chart.set_ylabel('Liczba urodzeń')
 chart.set_xlabel('Płeć')

@@ -10,7 +10,7 @@ xlsx = pd.ExcelFile('imiona.xlsx')
 df = pd.read_excel(xlsx)
 
 births_per_year = df.groupby("Rok")["Liczba"].sum()
-chart = births_per_year.plot()
+chart = births_per_year.plot(color="g")
 chart.set_ylabel('Liczba urodzeń')
 plt.title("Wykres urodzonych dzieci w latach 2000-2017")
 plt.show()
