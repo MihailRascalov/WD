@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
-np.random.seed(19680801)
-
 def randrange(n, vmin, vmax):
     """
     Funkcja wspomagająca może tworzyć macierz losowych liczb o
